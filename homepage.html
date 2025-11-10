@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elder Care Home — Simple Homepage</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maname&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; }
+  </style>
+</head>
+</head>
+<body class="antialiased text-slate-800">
+<!--nav bar-->
+<header class="fixed top-0 w-full bg-[#FFE4E1] shadow z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo / Site Name -->
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-6 rounded-full bg-amber-400 flex items-center justify-center text-white font-bold">EC</div>
+      <h1 class="text-xl font-semibold">සහනෝදය වැඩිහිටි නිවාසය</h1>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="#about" class="text-slate-700 hover:text-amber-600">About</a>
+      <a href="#services" class="text-slate-700 hover:text-amber-600">How we help</a>
+      <a href="#resources" class="text-slate-700 hover:text-amber-600">Resources</a>
+      <a href="#locations" class="text-slate-700 hover:text-amber-600">Locations</a>
+      <a href="#donate" class="px-4 py-2 bg-amber-600 text-white rounded-lg shadow hover:bg-amber-700 transition">Donate</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- Google Fonts (add this in your <head>) -->
+<link href="https://fonts.googleapis.com/css2?family=Maname&display=swap" rel="stylesheet">
+
+<!-- Font Styles -->
+<style>
+  /* Sinhala font for Sinhala text */
+  .sinhala-font {
+    font-family: 'Noto Sans Sinhala', sans-serif;
+  }
+
+  /* English heading and paragraph styles */
+  .hero-title { 
+    font-family: 'Playfair Display', serif; 
+    letter-spacing: 0.5px;
+  }
+
+  .hero-text { 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300; 
+  }
+</style>
+
+<!-- Hero Section -->
+<section 
+    class="relative h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
+  style="background-image: url('homepageimages/backgoundimage.jpg');"
+>
+  <!-- dark overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- content -->
+  <div class="relative max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-10 text-white">
+    <div class="md:w-1/2">
+      <!-- Sinhala heading -->
+      <h2 class="text-4xl  md:text-5xl font-extrabold sinhala-font">
+        සහනෝදය වැඩිහිටි නිවාසය
+      </h2>
+
+      <!-- English paragraph -->
+      <p class="mt-4 text-gray-200 text-lg hero-text">
+        We provide safe housing, medical support, companionship, and daily activities 
+        to elders in our community. Your support helps us run day-to-day operations 
+        and special programs.
+      </p>
+
+      <div class="mt-6 flex gap-4 items-center">
+        <button id="openDonate" class="px-6 py-3 bg-amber-600 text-white rounded-lg shadow hover:bg-amber-700 transition hero-text">
+          Donate Now
+        </button>
+        <a href="#about" class="text-amber-300 font-semibold hero-text">Learn how we help →</a>
+      </div>
+    </div>
+
+    <!-- stats card -->
+    <div class="md:w-1/2 w-full">
+      <div class="bg-white/90 rounded-2xl shadow p-6 text-slate-800">
+        <div class="grid grid-cols-3 gap-4 text-center">
+          <div>
+            <div class="text-2xl font-bold" id="eldersCount">42</div>
+            <div class="text-sm text-slate-500">Elders</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold" id="resourcesCount">18</div>
+            <div class="text-sm text-slate-500">Resources</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold" id="donationTotal">$3,200</div>
+            <div class="text-sm text-slate-500">Donations</div>
+          </div>
+        </div>
+
+        <div class="mt-6 text-sm text-slate-600 hero-text">
+          <p><strong>Open hours:</strong> Mon–Sun • 8:00 AM – 8:00 PM</p>
+          <p class="mt-2"><strong>Contact:</strong> +94 71 123 4567 • 
+            <a href="#" class="text-amber-600">hello@sunrisecare.org</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- How we help / Services -->
+  <section id="services" class="bg-white py-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-bold">How we help</h3>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl border">
+          <h4 class="font-semibold">Medical Care</h4>
+          <p class="mt-2 text-sm text-slate-600">Regular health checkups, physiotherapy and medication management.</p>
+        </div>
+        <div class="p-6 rounded-xl border">
+          <h4 class="font-semibold">Social Activities</h4>
+          <p class="mt-2 text-sm text-slate-600">Group activities, crafts, music sessions and family days to reduce isolation.</p>
+        </div>
+        <div class="p-6 rounded-xl border">
+          <h4 class="font-semibold">Counseling & Support</h4>
+          <p class="mt-2 text-sm text-slate-600">Emotional support for elders and guidance for families on care planning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section id="resources" class="max-w-6xl mx-auto px-6 py-10">
+    <h3 class="text-2xl font-bold">Resources</h3>
+    <p class="mt-2 text-slate-600">Equipment and facilities available at our centers.</p>
+
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <div class="p-4 bg-white rounded-lg shadow">
+        <h5 class="font-semibold">Medical Room</h5>
+        <p class="text-sm text-slate-600 mt-1">On-site clinic with first aid and basic emergency equipment.</p>
+      </div>
+      <div class="p-4 bg-white rounded-lg shadow">
+        <h5 class="font-semibold">Dining Hall</h5>
+        <p class="text-sm text-slate-600 mt-1">Nutritious meals prepared daily with attention to dietary needs.</p>
+      </div>
+      <div class="p-4 bg-white rounded-lg shadow">
+        <h5 class="font-semibold">Activity Room</h5>
+        <p class="text-sm text-slate-600 mt-1">Space for social gatherings, exercises and therapy sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations -->
+  <section id="locations" class="bg-white py-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-bold">Locations</h3>
+      <p class="mt-2 text-slate-600">Our centers and outreach locations.</p>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-4 rounded-lg border">
+          <h5 class="font-semibold">Main Home — Kandy</h5>
+          <p class="text-sm text-slate-600 mt-1">123 Hill View Road, Kandy</p>
+        </div>
+        <div class="p-4 rounded-lg border">
+          <h5 class="font-semibold">Day Care — Gampola</h5>
+          <p class="text-sm text-slate-600 mt-1">45 River Lane, Gampola</p>
+        </div>
+        <div class="p-4 rounded-lg border">
+          <h5 class="font-semibold">Community Outreach</h5>
+          <p class="text-sm text-slate-600 mt-1">Weekly visits to surrounding villages</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation section -->
+  <section id="donate" class="max-w-6xl mx-auto px-6 py-10">
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <div>
+        <h3 class="text-2xl font-bold">Support our elders</h3>
+        <p class="mt-2 text-slate-600">Donations help cover medical care, meals and facility upkeep. Any contribution — big or small — makes a difference.</p>
+
+        <div class="mt-6 bg-white p-6 rounded-xl shadow">
+          <label class="block text-sm text-slate-600">Amount (USD)</label>
+          <input id="donationAmount" type="number" min="1" value="50" class="mt-2 w-full p-3 border rounded-lg" />
+          <label class="block text-sm text-slate-600 mt-4">Your name (optional)</label>
+          <input id="donorName" type="text" placeholder="e.g. Jane Doe" class="mt-2 w-full p-3 border rounded-lg" />
+          <button id="donateBtn" class="mt-4 w-full px-4 py-3 bg-amber-600 text-white rounded-lg">Give Donation</button>
+
+          <p id="donationMsg" class="mt-3 text-sm text-slate-600 hidden"></p>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold">Recent donors</h4>
+        <ul id="donorList" class="mt-4 space-y-3 text-slate-600">
+          <li>Community Fund — $1,000</li>
+          <li>Mary Silva — $150</li>
+          <li>Anonymous — $50</li>
+        </ul>
+
+        <div class="mt-6 p-4 rounded-lg border">
+          <h5 class="font-semibold">How donations are used</h5>
+          <ul class="mt-2 text-sm text-slate-600 space-y-2">
+            <li>• Medical supplies and doctor visits</li>
+            <li>• Nutritious meals</li>
+            <li>• Activities & therapy</li>
+            <li>• Facility maintenance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#FFE4E1] text-black py-8">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+      <div>
+        <h6 class="font-semibold">Sunrise Elder Care</h6>
+        <p class="text-sm text-black mt-2">123 Hill View Road, Kandy • +94 71 123 4567</p>
+      </div>
+      <div>
+        <h6 class="font-semibold">Quick links</h6>
+        <ul class="mt-2 text-sm text-black space-y-2">
+          <li><a href="#about">About</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#locations">Locations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="font-semibold">Get in touch</h6>
+        <p class="text-sm text-black mt-2">Email: hello@sunrisecare.org</p>
+        <p class="text-sm text-black mt-1">Facebook: /sunrisecare</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple interactive JS (no backend) -->
+  <script>
+    // Starting values (could be pulled from an API in a live site)
+    let elders = 42;
+    let resources = 18;
+    let donationTotal = 3200; // USD
+
+    const eldersCountEl = document.getElementById('eldersCount');
+    const resourcesCountEl = document.getElementById('resourcesCount');
+    const donationTotalEl = document.getElementById('donationTotal');
+
+    function formatMoney(n) {
+      return '$' + Number(n).toLocaleString();
+    }
+
+    eldersCountEl.textContent = elders;
+    resourcesCountEl.textContent = resources;
+    donationTotalEl.textContent = formatMoney(donationTotal);
+
+    // Donation handling (client-side demo)
+    const donateBtn = document.getElementById('donateBtn');
+    const donationAmountInput = document.getElementById('donationAmount');
+    const donorNameInput = document.getElementById('donorName');
+    const donorList = document.getElementById('donorList');
+    const donationMsg = document.getElementById('donationMsg');
+
+    donateBtn.addEventListener('click', () => {
+      const amt = Number(donationAmountInput.value) || 0;
+      const name = donorNameInput.value.trim();
+      if (amt <= 0) {
+        donationMsg.textContent = 'Please enter a valid amount.';
+        donationMsg.classList.remove('hidden');
+        donationMsg.classList.add('text-red-600');
+        return;
+      }
+
+      // Update local totals (demo only)
+      donationTotal += amt;
+      donationTotalEl.textContent = formatMoney(donationTotal);
+
+      // Add donor to list
+      const li = document.createElement('li');
+      li.textContent = (name ? name : 'Anonymous') + ' — $' + amt;
+      donorList.prepend(li);
+
+      // Show message
+      donationMsg.textContent = 'Thank you for your donation — ' + formatMoney(amt) + '!';
+      donationMsg.classList.remove('hidden');
+      donationMsg.classList.remove('text-red-600');
+      donationMsg.classList.add('text-amber-600');
+
+      // small animation
+      donateBtn.textContent = 'Thank you ✓';
+      setTimeout(() => donateBtn.textContent = 'Give Donation', 2000);
+
+      // reset
+      donationAmountInput.value = 50;
+      donorNameInput.value = '';
+    });
+
+    // Open donate section from header
+    document.getElementById('openDonate').addEventListener('click', () => {
+      document.getElementById('donate').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
