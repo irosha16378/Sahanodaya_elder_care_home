@@ -18,24 +18,24 @@
 </head>
 <body class="antialiased text-slate-800">
 
-  <!-- Fixed header -->
-  <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow z-40">
-    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-white font-bold">EC</div>
-        <div>
-          <h1 class="text-lg font-semibold sinhala">සහනෝදය වැඩිහිටි නිවාසය</h1>
-          <p class="text-xs text-slate-500">Medical Support & Care</p>
-        </div>
-      </div>
-      <nav class="hidden md:flex gap-6 items-center text-sm">
-        <a href="#how" class="hover:text-amber-600">How we care</a>
-        <a href="#services" class="hover:text-amber-600">Services</a>
-        <a href="#team" class="hover:text-amber-600">Team</a>
-        <a href="#contact" class="px-3 py-2 bg-amber-600 text-white rounded-lg">Contact</a>
-      </nav>
+  <!--nav bar-->
+<header class="fixed top-0 w-full bg-[#FFE4E1] shadow z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo / Site Name -->
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-6 rounded-full bg-amber-400 flex items-center justify-center text-white font-bold">EC</div>
+      <h1 class="text-xl font-semibold">සහනෝදය වැඩිහිටි නිවාසය</h1>
     </div>
-  </header>
+
+    <!-- Navigation Links -->
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="../index.html" class="text-slate-700 hover:text-amber-600">Home</a>
+      <a href="#services" class="text-slate-700 hover:text-amber-600">How we help</a>
+      <a href="#resources" class="text-slate-700 hover:text-amber-600">Resources</a>
+      <a href="#locations" class="text-slate-700 hover:text-amber-600">Locations</a>
+    </nav>
+  </div>
+</header>
 
   <!-- Hero -->
   <section class="relative h-[70vh] md:h-[80vh] bg-cover bg-center flex items-center" style="background-image:url('images/heroimage.jpg');">
@@ -185,24 +185,24 @@
 
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white mt-12">
-    <div class="max-w-6xl mx-auto px-6 py-8 grid md:grid-cols-3 gap-6">
+  <footer class="bg-[#FFE4E1] text-black py-8">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
       <div>
-        <h5 class="font-semibold">Sunrise Elder Care</h5>
-        <p class="text-sm text-slate-300 mt-2">123 Hill View Road, Kandy</p>
-        <p class="text-sm text-slate-300 mt-1">+94 71 123 4567</p>
+        <h6 class="font-semibold">Sahanodaya Elder Care</h6>
+        <p class="text-sm text-black mt-2">123 Hill View Road, Kandy • +94 71 123 4567</p>
       </div>
       <div>
-        <h5 class="font-semibold">Hours</h5>
-        <p class="text-sm text-slate-300 mt-2">Medical desk: Mon–Sun • 8:00 – 18:00</p>
-      </div>
-      <div>
-        <h5 class="font-semibold">Quick links</h5>
-        <ul class="text-sm text-slate-300 mt-2 space-y-2">
-          <li><a href="#services" class="hover:text-amber-400">Services</a></li>
-          <li><a href="#team" class="hover:text-amber-400">Team</a></li>
-          <li><a href="#contact" class="hover:text-amber-400">Contact</a></li>
+        <h6 class="font-semibold">Quick links</h6>
+        <ul class="mt-2 text-sm text-black space-y-2">
+          <li><a href="#about">About</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#locations">Locations</a></li>
         </ul>
+      </div>
+      <div>
+        <h6 class="font-semibold">Get in touch</h6>
+        <p class="text-sm text-black mt-2">Email: hello@sunrisecare.org</p>
+        <p class="text-sm text-black mt-1">Facebook: /sunrisecare</p>
       </div>
     </div>
   </footer>
