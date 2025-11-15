@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elder Care Home — Simple Homepage</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maname&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; }
+  </style>
+</head>
+</head>
+<body class="antialiased text-slate-800">
+<!--nav bar-->
+<header class="fixed top-0 w-full bg-[#FFE4E1] shadow z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo / Site Name -->
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-6 rounded-full bg-amber-400 flex items-center justify-center text-white font-bold">EC</div>
+      <h1 class="text-xl font-semibold">සහනෝදය වැඩිහිටි නිවාසය</h1>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="../index.html" class="text-slate-700 hover:text-amber-600">Home</a>
+      <a href="#services" class="text-slate-700 hover:text-amber-600">About</a>
+      <a href="../donate.html" class="text-slate-700 hover:text-amber-600">Donate</a>
+      <a href="#locations" class="text-slate-700 hover:text-amber-600">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[70vh] md:h-[80vh] bg-cover bg-center flex items-center"
+           style="background-image: url('homepageimages/socialbg.jpg');">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 py-16 text-white text-center">
+      <h2 class="text-4xl font-bold mb-4">Social & Community Activities</h2>
+      <p class="text-lg">Creating joyful moments and meaningful connections for our elders.</p>
+    </div>
+  </section>
+
+  <!-- Activity Cards Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-10">Our Social Activities</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Card 1 -->
+        <button class="group block bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/musicday.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold">Poya Day Dharma deshan</h4>
+            <p class="mt-2 text-slate-600">Full day pirith</p>
+          </div>
+        </button>
+
+        <!-- Card 2 -->
+        <button class="group block bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/gardening.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold">New year Celebration</h4>
+            <p class="mt-2 text-slate-600">Eating and enjoying day</p>
+          </div>
+        </button>
+
+        <!-- Card 3 -->
+        <button class="group block bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/reading.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold">small events</h4>
+            <p class="mt-2 text-slate-600"></p>
+          </div>
+        </button>
+
+        <!-- Card 4 -->
+        <button class="group block bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/cultural.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold"></h4>
+            <p class="mt-2 text-slate-600"></p>
+          </div>
+        </button>
+
+        <!-- Card 5 -->
+        <button class="group block bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/exercise.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold">Gardening</h4>
+            <p class="mt-2 text-slate-600">Gargening the flowers and trees</p>
+          </div>
+        </button>
+
+        <!-- Card 6 -->
+        <button class="group block bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/communityvisit.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold"></h4>
+            <p class="mt-2 text-slate-600"></p>
+          </div>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#FFE4E1] text-black py-3">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+      <div>
+        <h6 class="font-semibold">Sahanodaya Elder Care</h6>
+        <p class="text-sm text-black mt-2">123 Hill View Road, Kandy • +94 71 123 4567</p>
+      </div>
+      <div>
+    </div>
+  </footer>
+</body>
+</html>
+

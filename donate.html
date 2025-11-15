@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elder Care Home — Simple Homepage</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maname&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; }
+  </style>
+</head>
+</head>
+<body class="antialiased text-slate-800">
+<!--nav bar-->
+<header class="fixed top-0 w-full bg-[#FFE4E1] shadow z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo / Site Name -->
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-6 rounded-full bg-amber-400 flex items-center justify-center text-white font-bold">EC</div>
+      <h1 class="text-xl font-semibold">සහනෝදය වැඩිහිටි නිවාසය</h1>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="index.html" class="text-slate-700 hover:text-amber-600">Home</a>
+      <a href="#services" class="text-slate-700 hover:text-amber-600">About</a>
+      <a href="donate.html" class="text-slate-700 hover:text-amber-600">Donate</a>
+      <a href="#locations" class="text-slate-700 hover:text-amber-600">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- Google Fonts (add this in your <head>) -->
+<link href="https://fonts.googleapis.com/css2?family=Maname&display=swap" rel="stylesheet">
+
+<!-- Font Styles -->
+<style>
+  /* Sinhala font for Sinhala text */
+  .sinhala-font {
+    font-family: 'Noto Sans Sinhala', sans-serif;
+  }
+
+  /* English heading and paragraph styles */
+  .hero-title { 
+    font-family: 'Playfair Display', serif; 
+    letter-spacing: 0.5px;
+  }
+
+  .hero-text { 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300; 
+  }
+</style>
+
+  <!-- Hero -->
+  <section class="relative h-[70vh] md:h-[80vh] bg-cover bg-center flex items-center" style="background-image:url('donateimage/donateheroimage.jpg');">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 py-16 text-white text-center">
+      <Donate class="text-3xl md:text-4xl font-extrabold sinhala">Donate</h2>
+      <p class="mt-3 text-lg">Help us provide meals, medical supplies and comfort items to our elders. Schedule a drop-off or donate funds.</p>
+    </div>
+  </section>
+
+  <main class="pt-8 max-w-6xl mx-auto px-6">
+
+    <!-- Intro + Accepted items -->
+    <section class="grid md:grid-cols-2 gap-8 items-start py-8">
+      <div>
+        <h3 class="text-2xl font-semibold">How to donate</h3>
+        <p class="mt-3 text-slate-600">You can donate money, fresh or packaged food, or household & care items. Use the form to schedule a drop-off or record a monetary gift. For large donations or pickups, please contact us at <strong>+94 71 123 4567</strong>.</p>
+
+        <div class="mt-6">
+          <h4 class="font-semibold">Accepted Food Items</h4>
+          <ul class="mt-2 text-sm text-slate-600 space-y-1">
+            <li>• Packaged dry foods (rice, lentils, flour)</li>
+            <li>• Canned foods, instant mixes, powdered milk</li>
+            <li>• Fresh vegetables & fruits (in good condition)</li>
+            <li>• Cooked meals (only when arranged in advance)</li>
+          </ul>
+
+          <h4 class="mt-4 font-semibold">Accepted Non-food Items</h4>
+          <ul class="mt-2 text-sm text-slate-600 space-y-1">
+            <li>• Bedding, towels (clean)</li>
+            <li>• Incontinence supplies, adult diapers (unused)</li>
+            <li>• Mobility aids (walkers, canes) — check first</li>
+            <li>• Toiletries & hygiene supplies</li>
+          </ul>
+
+          <div class="mt-4 p-4 rounded-lg bg-amber-50 border-l-4 border-amber-400">
+            <p class="text-sm text-amber-800"><strong>Note:</strong> Please label donations if they are specific (e.g., “for Mr. Silva”). Avoid perishable items without prior notice.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timetable -->
+      <aside>
+        <h4 class="text-xl font-semibold">Donation Timetable</h4>
+        <p class="mt-2 text-sm text-slate-600">Drop-off windows for food & items — arrive during these times for quick processing.</p>
+
+        <div class="mt-4 bg-white rounded-2xl shadow p-4">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="text-left text-slate-600">
+                <th class="pb-2">Day</th>
+                <th class="pb-2">Morning</th>
+                <th class="pb-2">Afternoon</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-700">
+              <tr class="border-t">
+                <td class="py-2 font-medium">Monday</td>
+                <td class="py-2">9:00 — 11:30</td>
+                <td class="py-2">14:00 — 16:30</td>
+              </tr>
+              <tr class="border-t bg-gray-50">
+                <td class="py-2 font-medium">Tuesday</td>
+                <td class="py-2">9:00 — 11:30</td>
+                <td class="py-2">14:00 — 16:30</td>
+              </tr>
+              <tr class="border-t">
+                <td class="py-2 font-medium">Wednesday</td>
+                <td class="py-2">Closed (Admin)</td>
+                <td class="py-2">14:00 — 16:30</td>
+              </tr>
+              <tr class="border-t bg-gray-50">
+                <td class="py-2 font-medium">Thursday</td>
+                <td class="py-2">9:00 — 11:30</td>
+                <td class="py-2">14:00 — 16:30</td>
+              </tr>
+              <tr class="border-t">
+                <td class="py-2 font-medium">Friday</td>
+                <td class="py-2">9:00 — 11:30</td>
+                <td class="py-2">14:00 — 16:30</td>
+              </tr>
+              <tr class="border-t bg-gray-50">
+                <td class="py-2 font-medium">Saturday</td>
+                <td class="py-2">10:00 — 12:00</td>
+                <td class="py-2">—</td>
+              </tr>
+              <tr class="border-t">
+                <td class="py-2 font-medium">Sunday</td>
+                <td class="py-2">—</td>
+                <td class="py-2">Volunteer visits only</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="mt-4 text-xs text-slate-500">If you need a pickup or want to drop outside schedule, call us to arrange: <strong>+94 71 123 4567</strong>.</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Donation form -->
+    <section id="donateForm" class="py-6">
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="text-2xl font-semibold">Schedule a Donation</h3>
+        <p class="mt-2 text-sm text-slate-600">Select donation type, preferred day & time slot from the timetable, and enter contact details.</p>
+
+        <form id="donationForm" class="mt-4 grid gap-3 md:grid-cols-2">
+          <!-- Left -->
+          <div class="space-y-3">
+            <label class="text-sm">Donation type</label>
+            <select id="donationType" class="p-3 border rounded-lg">
+              <option value="money">Money</option>
+              <option value="food">Food items</option>
+              <option value="items">Other items</option>
+            </select>
+
+            <div id="moneyFields" class="hidden">
+              <label class="text-sm">Amount (USD)</label>
+              <input type="number" id="moneyAmount" min="1" value="100" class="p-3 border rounded-lg" />
+              <label class="text-sm mt-2">Donor name (optional)</label>
+              <input type="text" id="moneyName" placeholder="e.g. Jane Doe" class="p-3 border rounded-lg" />
+            </div>
+
+            <div id="itemFields" class="hidden space-y-2">
+              <label class="text-sm">Select items to donate</label>
+              <div class="grid grid-cols-2 gap-2">
+                <label class="inline-flex items-center gap-2 p-2 border rounded">
+                  <input type="checkbox" name="items" value="Rice"> <span class="text-sm">Rice</span>
+                </label>
+                <label class="inline-flex items-center gap-2 p-2 border rounded">
+                  <input type="checkbox" name="items" value="Canned Food"> <span class="text-sm">Canned Food</span>
+                </label>
+                <label class="inline-flex items-center gap-2 p-2 border rounded">
+                  <input type="checkbox" name="items" value="Vegetables"> <span class="text-sm">Vegetables</span>
+                </label>
+                <label class="inline-flex items-center gap-2 p-2 border rounded">
+                  <input type="checkbox" name="items" value="Bedding"> <span class="text-sm">Bedding</span>
+                </label>
+                <label class="inline-flex items-center gap-2 p-2 border rounded">
+                  <input type="checkbox" name="items" value="Diapers"> <span class="text-sm">Adult Diapers</span>
+                </label>
+                <label class="inline-flex items-center gap-2 p-2 border rounded">
+                  <input type="checkbox" name="items" value="Toiletries"> <span class="text-sm">Toiletries</span>
+                </label>
+              </div>
+
+              <label class="text-sm mt-2">Other items (describe)</label>
+              <input id="otherItems" type="text" placeholder="e.g. 5 blankets" class="p-3 border rounded-lg" />
+            </div>
+
+            <label class="text-sm">Preferred drop-off day</label>
+            <select id="dropDay" class="p-3 border rounded-lg">
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+            </select>
+
+            <label class="text-sm">Preferred time slot</label>
+            <select id="dropTime" class="p-3 border rounded-lg">
+              <!-- options will be populated by JS based on timetable -->
+            </select>
+          </div>
+
+          <!-- Right -->
+          <div class="space-y-3">
+            <label class="text-sm">Contact name</label>
+            <input id="contactName" type="text" placeholder="Your name" class="p-3 border rounded-lg" required />
+
+            <label class="text-sm">Phone</label>
+            <input id="contactPhone" type="tel" placeholder="+94 7X XXX XXXX" class="p-3 border rounded-lg" required />
+
+            <label class="text-sm">Notes (optional)</label>
+            <textarea id="donationNotes" rows="4" placeholder="Any special instructions" class="p-3 border rounded-lg"></textarea>
+
+            <div class="flex gap-2 mt-2">
+              <button id="submitDonation" class="flex-1 bg-amber-600 text-white px-4 py-3 rounded-lg">Submit</button>
+              <button id="resetDonation" type="button" class="flex-1 border px-4 py-3 rounded-lg">Reset</button>
+            </div>
+
+            <p id="donationMsg" class="text-sm mt-2 hidden"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Recent donations -->
+    <section class="py-8">
+      <h4 class="text-xl font-semibold">Recent scheduled donations</h4>
+      <p class="text-sm text-slate-600 mt-1">These are stored locally in your browser (demo).</p>
+
+      <div class="mt-4">
+        <ul id="recentList" class="space-y-3"></ul>
+      </div>
+    </section>
+
+  </main>
+
+   <!-- Footer -->
+  <footer class="bg-[#FFE4E1] text-black py-8">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+      <div>
+        <h6 class="font-semibold">Sahanodaya Elder Care</h6>
+        <p class="text-sm text-black mt-2">123 Hill View Road, Kandy • +94 71 123 4567</p>
+      </div>
+      <div>
+        <h6 class="font-semibold">Quick links</h6>
+        <ul class="mt-2 text-sm text-black space-y-2">
+          <li><a href="#about">About</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#locations">Locations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="font-semibold">Get in touch</h6>
+        <p class="text-sm text-black mt-2">Email: hello@sunrisecare.org</p>
+        <p class="text-sm text-black mt-1">Facebook: /sunrisecare</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-side JS -->
+  <script>
+    // Timetable slots (match the table above)
+    const timetable = {
+      'Monday': ['09:00 - 11:30', '14:00 - 16:30'],
+      'Tuesday': ['09:00 - 11:30', '14:00 - 16:30'],
+      'Wednesday': ['14:00 - 16:30'],
+      'Thursday': ['09:00 - 11:30', '14:00 - 16:30'],
+      'Friday': ['09:00 - 11:30', '14:00 - 16:30'],
+      'Saturday': ['10:00 - 12:00']
+    };
+
+    // Populate dropTime based on selected day
+    const dropDay = document.getElementById('dropDay');
+    const dropTime = document.getElementById('dropTime');
+
+    function populateTimes(day) {
+      dropTime.innerHTML = '';
+      const slots = timetable[day] || [];
+      if (slots.length === 0) {
+        dropTime.innerHTML = '<option>Not available</option>';
+        dropTime.disabled = true;
+      } else {
+        dropTime.disabled = false;
+        slots.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s;
+          opt.textContent = s;
+          dropTime.appendChild(opt);
+        });
+      }
+    }
+    populateTimes(dropDay.value);
+    dropDay.addEventListener('change', () => populateTimes(dropDay.value));
+
+    // Show/hide fields depending on donation type
+    const donationType = document.getElementById('donationType');
+    const moneyFields = document.getElementById('moneyFields');
+    const itemFields = document.getElementById('itemFields');
+
+    donationType.addEventListener('change', () => {
+      moneyFields.classList.add('hidden');
+      itemFields.classList.add('hidden');
+      if (donationType.value === 'money') moneyFields.classList.remove('hidden');
+      if (donationType.value === 'food' || donationType.value === 'items') itemFields.classList.remove('hidden');
+    });
+    // initialize
+    donationType.dispatchEvent(new Event('change'));
+
+    // Handle form submit (client-side demo)
+    const submitBtn = document.getElementById('submitDonation');
+    const resetBtn = document.getElementById('resetDonation');
+    const donationMsg = document.getElementById('donationMsg');
+    const recentList = document.getElementById('recentList');
+
+    function loadRecent() {
+      const data = JSON.parse(localStorage.getItem('donations') || '[]');
+      recentList.innerHTML = '';
+      data.forEach(d => {
+        const li = document.createElement('li');
+        li.className = 'bg-white p-3 rounded-lg shadow-sm flex justify-between items-start';
+        li.innerHTML = `<div>
+                          <div class="font-semibold">${escapeHtml(d.typeDisplay)}</div>
+                          <div class="text-sm text-slate-600">${escapeHtml(d.details)}</div>
+                          <div class="text-xs text-slate-400 mt-1">${escapeHtml(d.day)} • ${escapeHtml(d.time)} — ${escapeHtml(d.contact)}</div>
+                        </div>
+                        <div class="text-sm font-semibold">${escapeHtml(d.amountDisplay)}</div>`;
+        recentList.appendChild(li);
+      });
+    }
+
+    function escapeHtml(s) {
+      return String(s).replaceAll('&', '&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+    }
+
+    submitBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const type = donationType.value;
+      const day = dropDay.value;
+      const time = dropTime.value;
+      const contactName = document.getElementById('contactName').value.trim();
+      const contactPhone = document.getElementById('contactPhone').value.trim();
+      if (!contactName || !contactPhone) {
+        donationMsg.textContent = 'Please enter your contact name and phone.';
+        donationMsg.className = 'text-sm mt-2 text-red-600';
+        return;
+      }
+
+      let details = '';
+      let amountDisplay = '';
+      if (type === 'money') {
+        const amt = Number(document.getElementById('moneyAmount').value) || 0;
+        const donor = document.getElementById('moneyName').value.trim() || 'Anonymous';
+        if (amt <= 0) {
+          donationMsg.textContent = 'Enter a valid donation amount.';
+          donationMsg.className = 'text-sm mt-2 text-red-600';
+          return;
+        }
+        details = `Monetary donation by ${donor}`;
+        amountDisplay = '$' + amt.toLocaleString();
+      } else {
+        // collect checked items
+        const checked = Array.from(document.querySelectorAll('input[name="items"]:checked')).map(i => i.value);
+        const other = document.getElementById('otherItems').value.trim();
+        details = (checked.length ? checked.join(', ') : '') + (other ? (checked.length ? ', ' : '') + other : '');
+        if (!details) details = 'General items';
+        amountDisplay = '—';
+      }
+
+      const record = {
+        type: type,
+        typeDisplay: type === 'money' ? 'Money' : (type === 'food' ? 'Food items' : 'Other items'),
+        details,
+        day,
+        time,
+        contact: contactName + ' • ' + contactPhone,
+        amountDisplay
+      };
+
+      // store locally (demo)
+      const arr = JSON.parse(localStorage.getItem('donations') || '[]');
+      arr.unshift(record);
+      localStorage.setItem('donations', JSON.stringify(arr.slice(0,50)));
+
+      // UI feedback
+      donationMsg.textContent = 'Thank you — your donation is scheduled. We will contact you to confirm.';
+      donationMsg.className = 'text-sm mt-2 text-amber-600';
+      document.getElementById('donationForm').reset();
+      donationType.dispatchEvent(new Event('change'));
+      populateTimes(dropDay.value);
+      loadRecent();
+    });
+
+    resetBtn.addEventListener('click', () => {
+      document.getElementById('donationForm').reset();
+      donationType.dispatchEvent(new Event('change'));
+      populateTimes(dropDay.value);
+      donationMsg.className = 'hidden';
+    });
+
+    // Load existing local donations on page load
+    loadRecent();
+  </script>
+</body>
+</html>
