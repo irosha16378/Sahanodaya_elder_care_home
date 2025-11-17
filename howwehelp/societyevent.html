@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elder Care Home — Simple Homepage</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maname&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; }
+  </style>
+</head>
+</head>
+<body class="antialiased text-slate-800">
+<!--nav bar-->
+<header class="fixed top-0 w-full bg-[#FFE4E1] shadow z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo / Site Name -->
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-6 rounded-full bg-amber-400 flex items-center justify-center text-white font-bold">EC</div>
+      <h1 class="text-xl font-semibold">සහනෝදය වැඩිහිටි නිවාසය</h1>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="../index.html" class="text-slate-700 hover:text-amber-600">Home</a>
+      <a href="#services" class="text-slate-700 hover:text-amber-600">About</a>
+      <a href="donate.html" class="text-slate-700 hover:text-amber-600">Donate</a>
+      <a href="#locations" class="text-slate-700 hover:text-amber-600">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[700px] bg-cover bg-center flex items-center justify-center"
+           style="background-image: url('images/societyeventshero.png');">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative text-center text-white">
+      <h2 class="text-4xl font-bold">Society & Club Events</h2>
+      <p class="mt-2 text-lg">School clubs and societies supporting our elders with kindness.</p>
+    </div>
+  </section>
+
+  <!-- Event Cards Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-10">Our Society Contributions</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Card 1: Painting -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/paint.jpg" 
+               class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold">Painting by School Clubs</h4>
+            <p class="mt-2 text-slate-600">
+              Students help repaint walls, fences, and rooms to make the home brighter and more welcoming.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: Cleaning -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/cleaning.jpg" 
+               class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold">Cleaning Programs</h4>
+            <p class="mt-2 text-slate-600">
+              Clubs organize cleaning days to tidy gardens, sweep floors, wash windows, and maintain the environment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3: Repair Work -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/repair.jpg" 
+               class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold">Repair & Maintenance</h4>
+            <p class="mt-2 text-slate-600">
+              Volunteers fix broken furniture, repair pathways, and support small renovation tasks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4: Decorations -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/decorations.jpg" 
+               class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold">Decorations & Festive Setup</h4>
+            <p class="mt-2 text-slate-600">
+              Societies decorate halls and gardens for Vesak, Christmas, New Year, and special events.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 5: Tree Planting -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/treeplant.jpg" 
+               class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold">Tree Planting Events</h4>
+            <p class="mt-2 text-slate-600">
+              Environmental clubs plant trees and maintain small gardens around the home.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 6: Cultural Support -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
+          <img src="homepageimages/culturalsupport.jpg" 
+               class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold">Cultural Support Programs</h4>
+            <p class="mt-2 text-slate-600">
+              School clubs perform dramas, dance, and music to bring joy to elders.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#FFE4E1] text-black py-8">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+      <div>
+        <h6 class="font-semibold">Sahanodaya Elder Care</h6>
+        <p class="text-sm text-black mt-2">123 Hill View Road, Kandy • +94 71 123 4567</p>
+      </div>
+      <div>
+        <h6 class="font-semibold">Quick links</h6>
+        <ul class="mt-2 text-sm text-black space-y-2">
+          <li><a href="#about">About</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#locations">Locations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="font-semibold">Get in touch</h6>
+        <p class="text-sm text-black mt-2">Email: hello@Sahanodaya.org</p>
+        <p class="text-sm text-black mt-1">Facebook: /Sahanodaya</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
