@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elder Care Home — Simple Homepage</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maname&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; }
+  </style>
+</head>
+</head>
+<body class="antialiased text-slate-800">
+<!--nav bar-->
+<header class="fixed top-0 w-full bg-[#FFE4E1] shadow z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo / Site Name -->
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-6 rounded-full bg-amber-400 flex items-center justify-center text-white font-bold">EC</div>
+      <h1 class="text-xl font-semibold">සහනෝදය වැඩිහිටි නිවාසය</h1>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="index.html" class="text-slate-700 hover:text-amber-600">Home</a>
+      <a href="#services" class="text-slate-700 hover:text-amber-600">About</a>
+      <a href="donate.html" class="text-slate-700 hover:text-amber-600">Donate</a>
+      <a href="#locations" class="text-slate-700 hover:text-amber-600">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[250px] bg-cover bg-center flex items-center justify-center"
+           style="background-image: url('homepageimages/contactbg.jpg');">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative text-center text-white px-4">
+      <h2 class="text-4xl font-bold">Contact Us</h2>
+      <p class="mt-2 text-lg">Reach out to our team or government contacts for any assistance.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6 space-y-12">
+
+      <!-- Officers Contact -->
+      <div>
+        <h3 class="text-3xl font-bold mb-6">Our Officers</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold">Dr. Sunil Perera</h4>
+            <p class="mt-2 text-slate-600">Director of ElderCare Home</p>
+            <p class="mt-2 text-sm text-slate-500">Phone: +94 71 123 4567</p>
+            <p class="text-sm text-slate-500">Email: <a href="mailto:sunil@eldercare.org" class="text-amber-600">sunil@eldercare.org</a></p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold">Mrs. Anjali Silva</h4>
+            <p class="mt-2 text-slate-600">Coordinator</p>
+            <p class="mt-2 text-sm text-slate-500">Phone: +94 77 987 6543</p>
+            <p class="text-sm text-slate-500">Email: <a href="mailto:anjali@eldercare.org" class="text-amber-600">anjali@eldercare.org</a></p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold">Mr. Nimal Fernando</h4>
+            <p class="mt-2 text-slate-600">Volunteer Manager</p>
+            <p class="mt-2 text-sm text-slate-500">Phone: +94 71 765 4321</p>
+            <p class="text-sm text-slate-500">Email: <a href="mailto:nimal@eldercare.org" class="text-amber-600">nimal@eldercare.org</a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Government Contacts -->
+      <div>
+        <h3 class="text-3xl font-bold mb-6">Government Contacts</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold">Ministry of Social Services</h4>
+            <p class="mt-2 text-slate-600">Hotline for elderly care queries and support</p>
+            <p class="mt-2 text-sm text-slate-500">Phone: +94 11 234 5678</p>
+            <p class="text-sm text-slate-500">Email: <a href="mailto:info@social.gov.lk" class="text-amber-600">info@social.gov.lk</a></p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold">District Secretariat – Kandy</h4>
+            <p class="mt-2 text-slate-600">Assistance and coordination for local elderly programs</p>
+            <p class="mt-2 text-sm text-slate-500">Phone: +94 81 222 3344</p>
+            <p class="text-sm text-slate-500">Email: <a href="mailto:secretariat@kandy.gov.lk" class="text-amber-600">secretariat@kandy.gov.lk</a></p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold">National Elderly Welfare Board</h4>
+            <p class="mt-2 text-slate-600">Policies, guidelines and support for elder care facilities</p>
+            <p class="mt-2 text-sm text-slate-500">Phone: +94 11 345 6789</p>
+            <p class="text-sm text-slate-500">Email: <a href="mailto:info@elderwelfare.gov.lk" class="text-amber-600">info@elderwelfare.gov.lk</a></p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 text-white py-6 text-center">
+    <p class="text-sm">&copy; 2025 ElderCare Home. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
