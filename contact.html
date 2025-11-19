@@ -14,13 +14,30 @@
     body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; }
   </style>
 </head>
-</head>
 <body class="antialiased text-slate-800">
-<!--nav bar-->
-<header class="fixed top-0 w-full bg-[#FFE4E1] shadow z-50">
+
+<!-- Back Button with Text -->
+<button onclick="history.back()"
+  class="fixed top-4 left-4 flex items-center gap-2 px-3 py-1 rounded-full hover:bg-amber-200 transition z-50 ">
+  
+  <!-- Arrow Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24" width="20" height="20"
+    fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 5l-7 7 7 7"/>
+    <path d="M22 12H2"/>
+  </svg>
+
+  <!-- Text -->
+  <span class="font-semibold">Back</span>
+</button>
+
+<!-- Nav bar -->
+<header class="fixed top-0 w-full bg-[#FFE4E1] shadow z-40">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <!-- Logo / Site Name -->
-    <div class="flex items-center gap-4">
+    <!-- Logo + Title -->
+    <div class="flex items-center gap-4 ml-10 md:ml-0"> <!-- added ml-10 to avoid overlap with back button -->
       <div class="w-12 h-6 rounded-full bg-amber-400 flex items-center justify-center text-white font-bold">EC</div>
       <h1 class="text-xl font-semibold">සහනෝදය වැඩිහිටි නිවාසය</h1>
     </div>
@@ -30,14 +47,15 @@
       <a href="index.html" class="text-slate-700 hover:text-amber-600">Home</a>
       <a href="#services" class="text-slate-700 hover:text-amber-600">About</a>
       <a href="donate.html" class="text-slate-700 hover:text-amber-600">Donate</a>
-      <a href="#locations" class="text-slate-700 hover:text-amber-600">Contact</a>
+      <a href="contact.html" class="text-slate-700 hover:text-amber-600">Contact</a>
     </nav>
   </div>
 </header>
 
+
   <!-- Hero Section -->
-  <section class="relative h-[250px] bg-cover bg-center flex items-center justify-center"
-           style="background-image: url('homepageimages/contactbg.jpg');">
+  <section class="relative h-[700px] bg-cover bg-center flex items-center justify-center"
+           style="background-image: url('contactpageimage/contactpageheroimage.jpg');">
     <div class="absolute inset-0 bg-black/40"></div>
     <div class="relative text-center text-white px-4">
       <h2 class="text-4xl font-bold">Contact Us</h2>
@@ -110,9 +128,27 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-slate-800 text-white py-6 text-center">
-    <p class="text-sm">&copy; 2025 ElderCare Home. All rights reserved.</p>
+    <!-- Footer -->
+  <footer class="bg-[#FFE4E1] text-black py-8">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+      <div>
+        <h6 class="font-semibold">Sahanodaya Elder Care</h6>
+        <p class="text-sm text-black mt-2">123 Hill View Road, Kandy • +94 71 123 4567</p>
+      </div>
+      <div>
+        <h6 class="font-semibold">Quick links</h6>
+        <ul class="mt-2 text-sm text-black space-y-2">
+          <li><a href="#about">About</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#locations">Locations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="font-semibold">Get in touch</h6>
+        <p class="text-sm text-black mt-2">Email: hello@sunrisecare.org</p>
+        <p class="text-sm text-black mt-1">Facebook: /sunrisecare</p>
+      </div>
+    </div>
   </footer>
 
 </body>
