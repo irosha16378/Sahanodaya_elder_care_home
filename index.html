@@ -28,7 +28,7 @@
     <!-- Navigation Links -->
     <nav class="hidden md:flex gap-6 items-center">
       <a href="index.html" class="text-slate-700 hover:text-amber-600">Home</a>
-      <a href="#services" class="text-slate-700 hover:text-amber-600">About</a>
+      <a href="donationtime.html" class="text-slate-700 hover:text-amber-600">Donation Schedule</a>
       <a href="donate.html" class="text-slate-700 hover:text-amber-600">Donate</a>
       <a href="contact.html" class="text-slate-700 hover:text-amber-600">Contact</a>
     </nav>
@@ -125,8 +125,7 @@
   <section id="services" class="bg-gradient-to-b from-blue-50 via-white to-blue-50 py-12">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex items-center justify-between">
-        <h3 class="text-2xl font-semibold text-slate-800">How we help</h3>
-        <p class="text-sm text-slate-500 hidden md:block">Care programs designed for dignity, health & happiness.</p>
+        <h3 class="text-2xl font-semibold text-slate-800">About Us</h3>
       </div>
 
       <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -170,7 +169,6 @@
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex items-center justify-between">
         <h3 class="text-2xl font-semibold text-slate-800">Resources</h3>
-        <p class="text-sm text-slate-500 hidden md:block">Facilities and equipment that support day-to-day care.</p>
       </div>
 
       <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -232,115 +230,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Donation -->
-  <section id="donate" class="bg-gradient-to-b from-blue-50 via-white to-blue-50 py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid gap-8 md:grid-cols-2 items-start">
-        <div>
-          <h3 class="text-2xl font-semibold text-slate-800">Support our elders</h3>
-          <p class="mt-2 text-slate-600 max-w-xl">Donations cover medical care, nutritious meals, activities and facility upkeep. Any contribution helps keep our home safe and welcoming.</p>
-
-          <div class="mt-6 bg-white p-6 rounded-2xl shadow-sm">
-            <div class="flex items-center gap-4">
-              <img src="86df2?q=80&w=200&auto=format&fit=crop" alt="donation" class="w-20 h-20 object-cover rounded-lg">
-              <div>
-                <p class="text-sm text-slate-500">Goal: <strong>$10,000</strong></p>
-                <p class="text-lg font-semibold text-slate-800" id="donationTotalDisplay">$3,200</p>
-              </div>
-            </div>
-
-            <div class="mt-4 w-full bg-slate-100 rounded-full h-3 overflow-hidden">
-              <div id="donationProgress" class="h-3 rounded-full bg-amber-500" style="width:32%"></div>
-            </div>
-
-            <label class="block text-sm text-slate-600 mt-5">Amount (USD)</label>
-            <input id="donationAmount" type="number" min="1" value="50" class="mt-2 w-full p-3 border rounded-lg" />
-
-            <label class="block text-sm text-slate-600 mt-4">Your name (optional)</label>
-            <input id="donorName" type="text" placeholder="e.g. Jane Doe" class="mt-2 w-full p-3 border rounded-lg" />
-
-            <button id="donateBtn" class="mt-4 w-full px-4 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition">Give Donation</button>
-
-            <p id="donationMsg" class="mt-3 text-sm text-slate-600 hidden"></p>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold text-slate-800">Recent donors</h4>
-          <ul id="donorList" class="mt-4 space-y-3 text-slate-600">
-            <li class="flex items-center justify-between bg-white p-3 rounded-lg shadow-sm">
-              <span>Community Fund</span><span class="font-semibold">$1,000</span>
-            </li>
-            <li class="flex items-center justify-between bg-white p-3 rounded-lg shadow-sm">
-              <span>Mary Silva</span><span class="font-semibold">$150</span>
-            </li>
-            <li class="flex items-center justify-between bg-white p-3 rounded-lg shadow-sm">
-              <span>Anonymous</span><span class="font-semibold">$50</span>
-            </li>
-          </ul>
-
-          <div class="mt-6 p-4 rounded-lg border bg-white">
-            <h5 class="font-semibold text-slate-800">How donations are used</h5>
-            <ul class="mt-2 text-sm text-slate-600 space-y-2">
-              <li>• Medical supplies and doctor visits</li>
-              <li>• Nutritious meals</li>
-              <li>• Activities & therapy</li>
-              <li>• Facility maintenance</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Donation script -->
-    <script>
-      (function () {
-        let donationTotal = 3200;
-        const goal = 10000;
-        const donationTotalDisplay = document.getElementById('donationTotalDisplay');
-        const donationProgress = document.getElementById('donationProgress');
-        const donateBtn = document.getElementById('donateBtn');
-        const donationAmountInput = document.getElementById('donationAmount');
-        const donorNameInput = document.getElementById('donorName');
-        const donorList = document.getElementById('donorList');
-        const donationMsg = document.getElementById('donationMsg');
-
-        function updateUI() {
-          const percent = Math.min(100, Math.round((donationTotal / goal) * 100));
-          donationTotalDisplay.textContent = '$' + donationTotal.toLocaleString();
-          donationProgress.style.width = percent + '%';
-        }
-        updateUI();
-
-        donateBtn.addEventListener('click', () => {
-          const amt = Math.max(0, Number(donationAmountInput.value) || 0);
-          const name = donorNameInput.value.trim() || 'Anonymous';
-          if (amt <= 0) {
-            donationMsg.textContent = 'Please enter a valid donation amount.';
-            donationMsg.classList.remove('hidden');
-            donationMsg.classList.add('text-red-600');
-            return;
-          }
-          donationTotal += amt;
-          updateUI();
-
-          const li = document.createElement('li');
-          li.className = 'flex items-center justify-between bg-white p-3 rounded-lg shadow-sm';
-          li.innerHTML = '<span>' + name + '</span><span class="font-semibold">$' + amt + '</span>';
-          donorList.prepend(li);
-
-          donationMsg.textContent = 'Thank you for your donation — $' + amt + '!';
-          donationMsg.classList.remove('hidden');
-          donationMsg.classList.remove('text-red-600');
-          donationMsg.classList.add('text-amber-600');
-
-          donationAmountInput.value = 50;
-          donorNameInput.value = '';
-        });
-      })();
-    </script>
   </section>
 </main>
 
