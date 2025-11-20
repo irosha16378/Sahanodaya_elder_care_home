@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Maname&display=swap" rel="stylesheet">
+  
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -52,80 +53,75 @@
   </div>
 </header>
 
-  <!-- Hero Section -->
-  <section class="relative h-[70vh] md:h-[80vh] bg-cover bg-center flex items-center"
-           style="background-image: url('homepageimages/socialbg.jpg');">
-    <div class="absolute inset-0 bg-black/40"></div>
-    <div class="relative z-10 max-w-4xl mx-auto px-6 py-16 text-white text-center">
-      <h2 class="text-4xl font-bold mb-4">Social & Community Activities</h2>
-      <p class="text-lg">Creating joyful moments and meaningful connections for our elders.</p>
-    </div>
-  </section>
+<!-- Hero Section -->
+<section class="relative h-[70vh] md:h-[80vh] bg-cover bg-center flex items-center
+               [mask-image:linear-gradient(to_right,transparent,black_40%,black_80%,transparent)]"
+         style="background-image: url('images/societyeventshero.png');">
+  
+  <div class="absolute inset-0 bg-black/40"></div>
 
-  <!-- Activity Cards Section -->
-  <section class="py-16">
-    <div class="max-w-7xl mx-auto px-6">
-      <h3 class="text-3xl font-bold text-center mb-10">Our Social Activities</h3>
+  <div class="relative z-10 max-w-4xl mx-auto px-6 py-16 text-white text-center">
+    <h2 class="text-4xl font-bold mb-4">Social & Community Activities</h2>
+    <p class="text-lg">Creating joyful moments and meaningful connections for our elders.</p>
+  </div>
+</section>
+<!-- Program section -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Programs</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-        <!-- Card 1 -->
-        <button class="group block bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
-          <img src="homepageimages/musicday.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="p-6">
-            <h4 class="text-xl font-semibold">Poya Day Dharma deshan</h4>
-            <p class="mt-2 text-slate-600">Full day pirith</p>
-          </div>
-        </button>
-
-        <!-- Card 2 -->
-        <button class="group block bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
-          <img src="homepageimages/gardening.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="p-6">
-            <h4 class="text-xl font-semibold">New year Celebration</h4>
-            <p class="mt-2 text-slate-600">Eating and enjoying day</p>
-          </div>
-        </button>
-
-        <!-- Card 3 -->
-        <button class="group block bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
-          <img src="homepageimages/reading.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="p-6">
-            <h4 class="text-xl font-semibold">small events</h4>
-            <p class="mt-2 text-slate-600"></p>
-          </div>
-        </button>
-
-        <!-- Card 4 -->
-        <button class="group block bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
-          <img src="homepageimages/cultural.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="p-6">
-            <h4 class="text-xl font-semibold"></h4>
-            <p class="mt-2 text-slate-600"></p>
-          </div>
-        </button>
-
-        <!-- Card 5 -->
-        <button class="group block bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
-          <img src="homepageimages/exercise.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="p-6">
-            <h4 class="text-xl font-semibold">Gardening</h4>
-            <p class="mt-2 text-slate-600">Gargening the flowers and trees</p>
-          </div>
-        </button>
-
-        <!-- Card 6 -->
-        <button class="group block bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition">
-          <img src="homepageimages/communityvisit.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="p-6">
-            <h4 class="text-xl font-semibold"></h4>
-            <p class="mt-2 text-slate-600"></p>
-          </div>
-        </button>
-
+    <!-- Program 1 -->
+    <div class="flex flex-col md:flex-row items-center mb-12 bg-white rounded-xl shadow overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+      <img src="images/heroimage.jpg" alt="Workshop" class="w-full md:w-1/2 h-64 object-cover transition-transform duration-500 hover:scale-110">
+      <div class="p-8 md:w-1/2 transform transition duration-500 hover:translate-y-1">
+        <h3 class="text-2xl font-bold mb-4">Wesak Day Programs</h3>
+        <p class="text-gray-700 mb-4">“At Sahanodaya Elder Care Home, Wesak Day is celebrated with great reverence and joy. Residents participate in lighting traditional oil lamps, decorating the premises with colorful lanterns, and engaging in meditation and chanting sessions. Special sermons and storytelling sessions are organized to reflect on the life and teachings of Lord Buddha. The celebration fosters spiritual reflection, peace, and a sense of unity among the elders, allowing them to connect with their cultural and religious heritage.”</p>
+        <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More</a>
       </div>
     </div>
-  </section>
+
+    <!-- Program 2 -->
+    <div class="flex flex-col md:flex-row-reverse items-center mb-12 bg-white rounded-xl shadow overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+      <img src="images/heroimage.jpg" alt="Conference" class="w-full md:w-1/2 h-64 object-cover transition-transform duration-500 hover:scale-110">
+      <div class="p-8 md:w-1/2 transform transition duration-500 hover:translate-y-1">
+        <h3 class="text-2xl font-bold mb-4">Monthly Full Moon Poya Days Programs</h3>
+        <p class="text-gray-700 mb-4">“Full Moon Poya Days are observed with religious activities, meditation sessions, and group prayers. Residents visit nearby temples or have in-house Poya Day ceremonies conducted by monks. Discussions on moral values and life lessons are arranged, encouraging mindfulness and introspection. These activities promote spiritual well-being, reinforce a calm and reflective environment, and strengthen communal bonds among the elders.”</p>
+        <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Program 3 -->
+    <div class="flex flex-col md:flex-row items-center mb-12 bg-white rounded-xl shadow overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+      <img src="https://source.unsplash.com/600x400/?music" alt="Music Festival" class="w-full md:w-1/2 h-64 object-cover transition-transform duration-500 hover:scale-110">
+      <div class="p-8 md:w-1/2 transform transition duration-500 hover:translate-y-1">
+        <h3 class="text-2xl font-bold mb-4">New Year Day Programs</h3>
+        <p class="text-gray-700 mb-4">“New Year celebrations at the care home are filled with cultural traditions and entertainment. Residents participate in traditional rituals such as lighting the hearth, offering blessings, and observing customs to welcome the year. Fun activities and games, cultural performances, music, and dance are arranged to create a joyful and lively atmosphere. Family-style meals and social interactions help foster happiness, togetherness, and engagement among residents.”</p>
+        <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Program 4 -->
+    <div class="flex flex-col md:flex-row-reverse items-center mb-12 bg-white rounded-xl shadow overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+      <img src="https://source.unsplash.com/600x400/?photography" alt="Photography" class="w-full md:w-1/2 h-64 object-cover transition-transform duration-500 hover:scale-110">
+      <div class="p-8 md:w-1/2 transform transition duration-500 hover:translate-y-1">
+        <h3 class="text-2xl font-bold mb-4">Elders Day Programs</h3>
+        <p class="text-gray-700 mb-4">“Elders’ Day is a special occasion to honor and celebrate the contributions of senior residents. The care home organizes award ceremonies, cultural programs, and interactive sessions where elders share experiences and stories. Social activities, games, and group discussions create engagement and joy, ensuring that every resident feels valued and respected. This day strengthens the sense of appreciation, community, and belonging among all elders.”</p>
+        <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Program 5 -->
+    <div class="flex flex-col md:flex-row items-center mb-12 bg-white rounded-xl shadow overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+      <img src="https://source.unsplash.com/600x400/?networking" alt="Networking" class="w-full md:w-1/2 h-64 object-cover transition-transform duration-500 hover:scale-110">
+      <div class="p-8 md:w-1/2 transform transition duration-500 hover:translate-y-1">
+        <h3 class="text-2xl font-bold mb-4">Welfare Programs</h3>
+        <p class="text-gray-700 mb-4">“Sahanodaya Elder Care Home organizes welfare programs aimed at enhancing the physical, emotional, and social well-being of its residents. These include health check-ups, exercise and yoga sessions, counseling, recreational activities, educational workshops, and skill-building programs. The goal is to empower elders, maintain their independence, and provide support for a comfortable and meaningful life within the community.”</p>
+        <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-[#FFE4E1] text-black py-3">
