@@ -14,13 +14,30 @@
     body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; }
   </style>
 </head>
-</head>
 <body class="antialiased text-slate-800">
-<!--nav bar-->
-<header class="fixed top-0 w-full bg-[#FFE4E1] shadow z-50">
+
+<!-- Back Button with Text -->
+<button onclick="history.back()"
+  class="fixed top-4 left-4 flex items-center gap-2 px-3 py-1 rounded-full hover:bg-amber-200 transition z-50 ">
+  
+  <!-- Arrow Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24" width="20" height="20"
+    fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 5l-7 7 7 7"/>
+    <path d="M22 12H2"/>
+  </svg>
+
+  <!-- Text -->
+  <span class="font-semibold">Back</span>
+</button>
+
+<!-- Nav bar -->
+<header class="fixed top-0 w-full bg-[#FFE4E1] shadow z-40">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <!-- Logo / Site Name -->
-    <div class="flex items-center gap-4">
+    <!-- Logo + Title -->
+    <div class="flex items-center gap-4 ml-10 md:ml-0"> <!-- added ml-10 to avoid overlap with back button -->
       <div class="w-12 h-6 rounded-full bg-amber-400 flex items-center justify-center text-white font-bold">EC</div>
       <h1 class="text-xl font-semibold">සහනෝදය වැඩිහිටි නිවාසය</h1>
     </div>
@@ -35,10 +52,10 @@
 
     <!-- Desktop Menu -->
     <nav class="space-x-6 text-1xl hidden md:flex">
-      <a href="index.html" class="text-slate-700 hover:text-amber-600">Home</a>
-      <a href="donationtime.html" class="text-slate-700 hover:text-amber-600">Donation Schedule</a>
-      <a href="donate.html" class="text-slate-700 hover:text-amber-600">Donate</a>
-      <a href="contact.html" class="text-slate-700 hover:text-amber-600">Contact</a>
+      <a href="../index.html" class="text-slate-700 hover:text-amber-600">Home</a>
+      <a href="../donationtime.html" class="text-slate-700 hover:text-amber-600">Donation Schedule</a>
+      <a href="../donate.html" class="text-slate-700 hover:text-amber-600">Donate</a>
+      <a href="../contact.html" class="text-slate-700 hover:text-amber-600">Contact</a>
     </nav>
   </div>
 
@@ -60,6 +77,30 @@
     mobileMenu.classList.toggle("hidden");
   });
 </script>
+
+
+
+  <!-- Google Fonts (add this in your <head>) -->
+<link href="https://fonts.googleapis.com/css2?family=Maname&display=swap" rel="stylesheet">
+
+<!-- Font Styles -->
+<style>
+  /* Sinhala font for Sinhala text */
+  .sinhala-font {
+    font-family: 'Noto Sans Sinhala', sans-serif;
+  }
+
+  /* English heading and paragraph styles */
+  .hero-title { 
+    font-family: 'Playfair Display', serif; 
+    letter-spacing: 0.5px;
+  }
+
+  .hero-text { 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300; 
+  }
+</style>
 
 
 
