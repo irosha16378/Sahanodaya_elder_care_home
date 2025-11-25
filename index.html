@@ -146,15 +146,47 @@
   </div>
 </section>
 
-  <!-- Modern Sections with Image Cards as Buttons -->
-<main class="pt-6">
-
   <!-- How we help -->
   <section class="py-20 bg-gray-50">
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-12">About Us</h2>
 
-      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+     <!-- Modern Sections with Image Cards as Buttons -->
+<main class="pt-6">
+<!-- Background Video Section -->
+<section class="relative h-screen w-full overflow-hidden">
+
+  <!-- Video -->
+  <video id="bgVideo" class="absolute top-0 left-0 w-full h-full object-cover"
+         autoplay loop muted playsinline>
+      <source src="homepageimages/itrovedio.mp4" type="video/mp4">
+  </video>
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/30"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
+    <h1 class="text-4xl md:text-6xl font-bold">Welcome to Sahanodaya Elder Care Home</h1>
+    <p class="mt-4 text-lg md:text-xl">A place filled with love, comfort, and compassion.</p>
+
+    <!-- Unmute Button -->
+    <button onclick="unmuteVideo()" class="mt-6 px-6 py-3 bg-amber-500 hover:bg-amber-600 rounded-lg text-white font-semibold">
+      🔊 Enable Sound
+    </button>
+  </div>
+</section>
+
+<script>
+function unmuteVideo() {
+  const v = document.getElementById("bgVideo");
+  v.muted = false;   // Turn sound on
+  v.play();          // Ensure video continues
+}
+</script>
+
+
+      <div class="mt-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
 
         <!-- Card Button 1 -->
         <button type="button"  onclick="window.location.href='howwehelp/medicalcare.html';" class="group relative block overflow-hidden rounded-2xl shadow-sm border border-transparent hover:shadow-md transition focus:outline-none">
